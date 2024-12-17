@@ -4,6 +4,7 @@ using Backend_wt15.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend_wt15.Migrations
 {
     [DbContext(typeof(SklepContext))]
-    partial class SklepContextModelSnapshot : ModelSnapshot
+    [Migration("20241217144212_start")]
+    partial class start
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,42 +52,42 @@ namespace Backend_wt15.Migrations
                             Id = 1,
                             Name = "pomidor",
                             Price = 7.9f,
-                            Quantity = 10
+                            Quantity = 0
                         },
                         new
                         {
                             Id = 2,
                             Name = "ziemniaki",
                             Price = 2.9f,
-                            Quantity = 10
+                            Quantity = 0
                         },
                         new
                         {
                             Id = 3,
                             Name = "ogorek",
                             Price = 9.9f,
-                            Quantity = 10
+                            Quantity = 0
                         },
                         new
                         {
                             Id = 4,
                             Name = "kalafior",
                             Price = 11.9f,
-                            Quantity = 10
+                            Quantity = 0
                         },
                         new
                         {
                             Id = 5,
                             Name = "brokuł",
                             Price = 7.5f,
-                            Quantity = 10
+                            Quantity = 0
                         },
                         new
                         {
                             Id = 6,
                             Name = "cukinia",
                             Price = 8.2f,
-                            Quantity = 10
+                            Quantity = 0
                         });
                 });
 #pragma warning restore 612, 618

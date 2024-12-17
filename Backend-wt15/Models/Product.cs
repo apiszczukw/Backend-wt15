@@ -1,5 +1,6 @@
 ﻿
 
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Backend_wt15.Models
@@ -24,5 +25,7 @@ namespace Backend_wt15.Models
         public string Name { get; set; }
 
         public float? Price { get; set; }
+
+        public int Quantity { get; set; }
     }
 }

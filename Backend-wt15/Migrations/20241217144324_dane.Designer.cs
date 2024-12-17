@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend_wt15.Migrations
 {
     [DbContext(typeof(SklepContext))]
-    [Migration("20241210151846_Dane")]
-    partial class Dane
+    [Migration("20241217144324_dane")]
+    partial class dane
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,6 +39,9 @@ namespace Backend_wt15.Migrations
                     b.Property<float?>("Price")
                         .HasColumnType("real");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");
@@ -48,37 +51,43 @@ namespace Backend_wt15.Migrations
                         {
                             Id = 1,
                             Name = "pomidor",
-                            Price = 7.9f
+                            Price = 7.9f,
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 2,
                             Name = "ziemniaki",
-                            Price = 2.9f
+                            Price = 2.9f,
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 3,
                             Name = "ogorek",
-                            Price = 9.9f
+                            Price = 9.9f,
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 4,
                             Name = "kalafior",
-                            Price = 11.9f
+                            Price = 11.9f,
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 5,
                             Name = "brokuł",
-                            Price = 7.5f
+                            Price = 7.5f,
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 6,
                             Name = "cukinia",
-                            Price = 8.2f
+                            Price = 8.2f,
+                            Quantity = 10
                         });
                 });
 #pragma warning restore 612, 618
